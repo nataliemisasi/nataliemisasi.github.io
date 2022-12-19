@@ -42,12 +42,14 @@ function addDemo(row) {
   if (!row.Items) {
     row.Items = [
       {
+        Date: '.Date',
         Description: 'Items[0].Description',
         Quantity: '.Quantity',
         Total: '.Total',
         Price: '.Price',
       },
       {
+        Date: '.Date',
         Description: 'Items[1].Description',
         Quantity: '.Quantity',
         Total: '.Total',
@@ -167,7 +169,7 @@ function updateInvoice(row) {
         row.SuggestReferencesColumn = true;
       }
     }
-    addDemo(row);
+    /* addDemo(row);
     if (!row.Subtotal && !row.Total && row.Items && Array.isArray(row.Items)) {
       try {
         row.Subtotal = row.Items.reduce((a, b) => a + b.Price * b.Quantity, 0);
@@ -175,7 +177,7 @@ function updateInvoice(row) {
       } catch (e) {
         console.error(e);
       }
-    }
+    } */
     if (row.Invoicer && row.Invoicer.Website && !row.Invoicer.Url) {
       row.Invoicer.Url = tweakUrl(row.Invoicer.Website);
     }
