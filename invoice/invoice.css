@@ -6,12 +6,13 @@ body {
 }
 
 .meta {
-  color: #ff8000;
+  color: #38761d;
 }
 
 .header .title {
   font-size: 300%;
   font-weight: bold;
+  background: #d9ead3;
 }
 
 .header .meta {
@@ -28,7 +29,7 @@ body {
 }
 
 .supplier {
-  color: #4682B4;
+  color: #0b080b;
   display: block;
 }
 
@@ -41,7 +42,7 @@ body {
   padding: 1px;
   margin-top: 1em;
   margin-bottom: 1em;
-  background: #ff8000;
+  background: #38761d;
   -webkit-print-color-adjust: exact !important;
   color-adjust: exact !important;
 }
@@ -59,7 +60,7 @@ body {
 
 table.items {
   width: 100%;
-  border: 1px solid #ff8000;
+  border: 1px solid #38761d;
   border-collapse: collapse;
 }
 
@@ -85,8 +86,12 @@ table.items td {
   text-align: right;
 }
 
+.date {
+  text-align: right;
+}
+
 .name {
-  color: #000080;
+  color: #0b080b;
 }
 
 .address {
@@ -124,7 +129,7 @@ div.summary .part {
 div.summary .total {
   display: block;
   flex-grow: 1;
-  background: #000080;
+  background: #d9ead3;
   font-size: 140%;
 }
 
