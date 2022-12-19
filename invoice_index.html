@@ -77,8 +77,8 @@
           </div>
         </div>
         
-        <div class="client" v-for="business in (invoice.Client ? [invoice.Client] : [])">
-          <div class="title">Client</div>
+        <div class="client" v-for="business in (invoice.Vendor ? [invoice.Vendor] : [])">
+          <div class="title">Vendor</div>
           <div class="details">
             <template v-if="typeof(business) === 'string'">
               <div class="newlined">{{ business }}</div>
@@ -113,8 +113,8 @@
           <template v-else>
             <tr>
               <th>Description</th>
-              <th class="money">Unit Price</th>
-              <th class="number">Quantity</th>
+              <th class="money">Rate</th>
+              <th class="number">Qty/Hr</th>
               <th class="money">Total</th>
             </tr>
             <tr v-for="item in invoice.Items">
@@ -186,7 +186,7 @@
         </div>
 
         <div class="print">
-          <a href="javascript:window.print()">Print</a>
+          <a href="javascript:window.print()">Save as PDF</a>
         </div>
       </template>
     </div>
