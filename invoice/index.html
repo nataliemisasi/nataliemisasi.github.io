@@ -100,7 +100,7 @@
         </div>
 
         <table class="items">
-          <template v-if="invoice.Items">
+          <template v-if="!Array.isArray(invoice.Items)">
             <tr>
               <th>Description</th>
               <th class="money">Total</th>
