@@ -98,11 +98,11 @@
             </template>
           </div>
         </div>
-        
-        <div class="period">
+
+        <div class="period"><span class="meta">
           <div class="title">Pay Period</div>
-          <div class="details"><div class="meta date-tag">To</div> {{ invoice.Pay_Period_Start | asDate }}</div>
-          <div class="details"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_End | asDate }}</div>
+          <div class="details" v-if="invoice.Pay_Period_Start"><div class="meta date-tag">To</div> {{ invoice.Pay_Period_Start | asDate }}</div>
+          <div class="details" v-if="invoice.Pay_Period_End"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_End | asDate }}</div>
         </div>
 
         <table class="items">
