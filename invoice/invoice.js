@@ -19,8 +19,11 @@ function addDemo(row) {
   if (!row.Invoicer) {
     row.Invoicer = {
       Name: 'Invoicer.Name',
-      Department: 'Invoicer.Department',
-      Manager: 'Invoicer.Tour_Manager',
+      Street1: 'Invoicer.Street1',
+      Street2: 'Invoicer.Street2',
+      City: 'Invoicer.City',
+      State: '.State',
+      Zip: '.Zip',
       Email: 'Invoicer.Email',
       Phone: 'Invoicer.Phone',
       Website: 'Invoicer.Website'
