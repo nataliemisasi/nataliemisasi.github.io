@@ -44,9 +44,7 @@
             <div class="info"><span class="meta">Invoice Number</span> #{{ invoice.Number }}</div>
             <div class="info" v-if="invoice.Issued"><div class="meta date-tag">Issued</div> {{ invoice.Issued | asDate }}</div>
             <div class="info" v-if="invoice.Due"><div class="meta date-tag">Due</div> {{ invoice.Due | asDate }}</div>
-            <div class="info">Pay Period</div>
-            <div class="info" v-if="invoice.Pay_Period_Start"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_Start | asDate }}</div>
-            <div class="info" v-if="invoice.Pay_Period_End"><div class="meta date-tag">To</div> {{ invoice.Pay_Period_End | asDate }}</div>
+            <div class="info">Pay Period</div><div class="info" v-if="invoice.Pay_Period_Start"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_Start | asDate }}</div><div class="info" v-if="invoice.Pay_Period_End"><div class="meta date-tag">To</div> {{ invoice.Pay_Period_End | asDate }}</div>
           </div>
           
           <div class="supplier">
