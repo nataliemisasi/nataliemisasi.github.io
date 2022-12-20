@@ -45,6 +45,7 @@
             <div class="info" v-if="invoice.Issued"><div class="meta date-tag">Issued</div> {{ invoice.Issued | asDate }}</div>
             <div class="info" v-if="invoice.Due"><div class="meta date-tag">Due</div> {{ invoice.Due | asDate }}</div>
             <div class="info"><div class="meta date-tag">Pay Period</div> {{ invoice.Pay_Period_Start | asDate }} thru {{ invoice.Pay_Period_End | asDate }} </div>
+          </div>
           
           <div class="supplier">
             <div v-for="business in (invoice.Invoicer ? [invoice.Invoicer] : [])">
