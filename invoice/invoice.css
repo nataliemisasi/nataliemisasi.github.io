@@ -58,27 +58,6 @@ body {
   background: #fff;
 }
 
-.period {
-  padding: 1px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background: #d9ead3;
-  -webkit-print-color-adjust: exact !important;
-  color-adjust: exact !important;
-}
-
-.period .title {
-  margin-left: 4px;
-  color: #38761d;
-  text-transform: uppercase;
-}
-
-.period .detail {
-  padding: 4px;
-  color: #0b080b;
-  background: #fff;
-}
-
 table.items {
   width: 100%;
   border: 1px solid #38761d;
