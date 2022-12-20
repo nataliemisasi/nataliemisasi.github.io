@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
 
-    <script src="invoice.js?ver=12"></script>
+    <script src="invoice.js?ver=11"></script>
     <script src="exampleData.js"></script>
 
     <link rel="stylesheet" href="invoice.css?ver=17">
@@ -46,7 +46,7 @@
             <div class="info" v-if="invoice.Due"><div class="meta date-tag">Due</div> {{ invoice.Due | asDate }}</div>
             <div class="info" v-if="invoice.Department"><div class="meta">Department</div> {{ invoice.Department }}</div>
             <div class="info" v-if="invoice.Tour_Manager"><div class="meta">Tour Manager</div> {{ invoice.Tour_Manager }}</div>
-            <br></br>
+            <br>
             <div class="info"><div class="meta date-tag">Pay Period</div> {{ invoice.Pay_Period_Start | asShortDate }} thru {{ invoice.Pay_Period_End | asShortDate }} </div>
           </div>
           
