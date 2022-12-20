@@ -98,6 +98,12 @@
             </template>
           </div>
         </div>
+        
+        <div class="client">
+          <div class="title">Pay Period</div>
+          <div class="details" v-if="invoice.Issued"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_Start | asDate }}</div>
+          <div class="details" v-if="invoice.Issued"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_End | asDate }}</div>
+        </div>
 
         <table class="items">
           <template v-if="!Array.isArray(invoice.Items)">
