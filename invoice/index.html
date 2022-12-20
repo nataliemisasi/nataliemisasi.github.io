@@ -101,8 +101,8 @@
         
         <div class="period">
           <div class="title">Pay Period</div>
-          <div class="details" v-if="invoice.Issued"><div class="meta date-tag">To</div> {{ invoice.Pay_Period_Start | asDate }}</div>
-          <div class="details" v-if="invoice.Issued"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_End | asDate }}</div>
+          <div class="details"><div class="meta date-tag">To</div> {{ invoice.Pay_Period_Start | asDate }}</div>
+          <div class="details"><div class="meta date-tag">From</div> {{ invoice.Pay_Period_End | asDate }}</div>
         </div>
 
         <table class="items">
