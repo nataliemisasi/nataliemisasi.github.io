@@ -1,0 +1,21 @@
+<script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
+<style>
+  html, body, #frame {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+  }
+  </style>
+ <iframe id="frame">
+ </iframe>
+ <script>
+  grist.ready({ requiredAccess: 'read table', columns: ['Url'] });
+  grist.onRecord(record => {
+    document.getElementById("frame").src = grist.mapColumnNames(record).Url
+  });
+  grist.onNewRecord(() => {
+    document.getElementById("frame").src = "";
+  })
+</script>
