@@ -6,7 +6,7 @@ body {
 }
 
 .meta {
-  color: #ff8000;
+  color: #00C48C;
 }
 
 .header .title {
@@ -27,7 +27,7 @@ body {
 }
 
 .supplier {
-  color: #4682B4;
+  color: #fcae47;
   display: block;
 }
 
@@ -85,7 +85,7 @@ table.items td {
 }
 
 .name {
-  color: #000080;
+  color: #142a42;
 }
 
 .address {
