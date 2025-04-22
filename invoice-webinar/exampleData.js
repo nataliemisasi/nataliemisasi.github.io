@@ -25,14 +25,14 @@ const exampleData = {
 
   Items: [
     {
-      SKU: '12345'
+      SKU: '12345',
       Description: 'Wolf Whistle',
       Price: 35,
       Quantity: 3,
       Total: 105,
     },
     {
-      SKU: '98765'
+      SKU: '98765',
       Description: 'Bravo',
       Price: 30,
       Quantity: 17,
