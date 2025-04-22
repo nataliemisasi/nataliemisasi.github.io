@@ -196,7 +196,7 @@ div.print {
 }
 
 div.print a {
-  background: #f8ad40;
+  background: #16a772;
   display: block;
   font-size: 200%;
   color: white;
@@ -209,7 +209,7 @@ div.print a {
 }
 
 div.print a:hover {
-  background: #16a772;
+  background: #f8ad40;
 }
 
 .done {
