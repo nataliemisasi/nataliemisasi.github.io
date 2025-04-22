@@ -25,12 +25,14 @@ const exampleData = {
 
   Items: [
     {
+      SKU: '12345'
       Description: 'Wolf Whistle',
       Price: 35,
       Quantity: 3,
       Total: 105,
     },
     {
+      SKU: '98765'
       Description: 'Bravo',
       Price: 30,
       Quantity: 17,
@@ -39,8 +41,6 @@ const exampleData = {
   ],
 
   Subtotal: 615,
-  Deduction: null,
-  Taxes: null,
   Total: 615,
   Paid: true,
 };
