@@ -11,7 +11,7 @@ function addDemo(row) {
     for (const key of ['Number', 'Issued', 'Due']) {
       if (!row[key]) { row[key] = key; }
     }
-    for (const key of ['Subtotal', 'Deduction', 'Taxes', 'Total']) {
+    for (const key of ['Subtotal', 'Total']) {
       if (!(key in row)) { row[key] = key; }
     }
     if (!('Note' in row)) { row.Note = '(Anything in a Note column goes here)'; }
@@ -42,12 +42,14 @@ function addDemo(row) {
   if (!row.Items) {
     row.Items = [
       {
+        SKU: 'Items[0].SKU',
         Description: 'Items[0].Description',
         Quantity: '.Quantity',
         Total: '.Total',
         Price: '.Price',
       },
       {
+        SKU: 'Items[1].SKU',
         Description: 'Items[1].Description',
         Quantity: '.Quantity',
         Total: '.Total',
@@ -152,7 +154,7 @@ function updateInvoice(row) {
     const want = new Set(Object.keys(addDemo({})));
     const accepted = new Set(['References']);
     const importance = ['Number', 'Client', 'Items', 'Total', 'Invoicer', 'Due', 
-                        'Issued', 'Subtotal', 'Deduction', 'Taxes', 'Note', 'Paid'];
+                        'Issued', 'Subtotal', 'Note', 'Paid'];
     if (!(row.Due || row.Issued)) {
       const seen = new Set(Object.keys(row).filter(k => k !== 'id' && k !== '_error_'));
       const help = row.Help = {};
