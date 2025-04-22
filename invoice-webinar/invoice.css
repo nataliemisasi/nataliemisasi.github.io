@@ -159,7 +159,7 @@ div.summary::after {
 
 .thanks {
   text-align: right;
-  color: #C83200;
+  color: #2bafae;
   font-size: 200%;
 }
 
@@ -209,7 +209,7 @@ div.print a {
 }
 
 div.print a:hover {
-  background: #4682B4;
+  background: #16a772;
 }
 
 .done {
