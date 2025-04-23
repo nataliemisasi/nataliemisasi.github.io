@@ -18,6 +18,18 @@ body {
   text-transform: uppercase;
 }
 
+.logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo img {
+  height: 100%;          /* Let it fill the height of the parent */
+  max-height: 100px;     /* Optional: cap it just in case */
+  object-fit: contain;   /* Scale it nicely */
+  margin-right: 20px;
+}
+
 .info .meta {
   text-transform: uppercase;
 }
