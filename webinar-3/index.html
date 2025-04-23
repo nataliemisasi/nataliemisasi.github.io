@@ -112,12 +112,14 @@
           </template>
           <template v-else>
             <tr>
+              <th>SKU</th>
               <th>Description</th>
               <th class="money">Unit Price</th>
               <th class="number">Quantity</th>
               <th class="money">Total</th>
             </tr>
             <tr v-for="item in invoice.Items">
+              <td>{{ item.SKU }}</td>
               <td>{{ item.Description }}</td>
               <td class="money">{{ item.Price | currency }}</td>
               <td class="number">{{ item.Quantity }}</td>
@@ -130,10 +132,6 @@
           <div class="part">
             <div class="title">Subtotal</div>
             <div class="details">{{ invoice.Subtotal | currency }}</div>
-          </div>
-          <div class="part">
-            <div class="title">Deduction</div>
-            <div class="details">{{ invoice.Deduction | currency }}</div>
           </div>
           <div class="part">
             <div class="title">Taxes</div>
