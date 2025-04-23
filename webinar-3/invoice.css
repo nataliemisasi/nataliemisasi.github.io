@@ -23,11 +23,18 @@ body {
   align-items: flex-start;
 }
 
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
 .logo img {
-  height: 100%;          /* Let it fill the height of the parent */
-  max-height: 100px;     /* Optional: cap it just in case */
-  object-fit: contain;   /* Scale it nicely */
-  margin-right: 20px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+  display: block;
 }
 
 .info .meta {
