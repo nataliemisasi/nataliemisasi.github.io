@@ -116,6 +116,9 @@ div.date-tag {
 }
 
 div.top {
+  display: flex;
+  width: 100%;
+  padding: 0px;
   justify-content: space-between;
   justify-content: start;
 }
