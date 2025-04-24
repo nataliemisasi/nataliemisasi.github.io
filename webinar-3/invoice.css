@@ -53,6 +53,7 @@ body {
 .block {
   padding-left: 5px;
   display: block;
+  flex: auto;
 }
 
 .client, .items, .summary {
@@ -121,6 +122,7 @@ div.top {
   width: 100%;
   padding: 0px;
   justify-content: space-between;
+  justify-content: start;
 }
 
 div.summary {
