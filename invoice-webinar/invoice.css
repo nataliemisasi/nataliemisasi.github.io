@@ -81,7 +81,7 @@ table.items td {
 }
 
 .money, .number {
-  text-align: right;
+  text-align: left;
 }
 
 .name {
