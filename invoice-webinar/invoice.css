@@ -6,7 +6,7 @@ body {
 }
 
 .meta {
-  color: #ff8000;
+  color: #3A4550;
 }
 
 .header .title {
@@ -27,7 +27,7 @@ body {
 }
 
 .supplier {
-  color: #4682B4;
+  color: #3A4550;
   display: block;
 }
 
@@ -40,7 +40,7 @@ body {
   padding: 1px;
   margin-top: 1em;
   margin-bottom: 1em;
-  background: #ff8000;
+  background: #F9AE41;
   -webkit-print-color-adjust: exact !important;
   color-adjust: exact !important;
 }
@@ -58,7 +58,7 @@ body {
 
 table.items {
   width: 100%;
-  border: 1px solid #ff8000;
+  border: 1px solid #F9AE41;
   border-collapse: collapse;
 }
 
@@ -85,7 +85,7 @@ table.items td {
 }
 
 .name {
-  color: #000080;
+  color: #16B378;
 }
 
 .address {
@@ -123,7 +123,7 @@ div.summary .part {
 div.summary .total {
   display: block;
   flex-grow: 1;
-  background: #000080;
+  background: #16B378;
   font-size: 140%;
 }
 
@@ -159,7 +159,7 @@ div.summary::after {
 
 .thanks {
   text-align: right;
-  color: #C83200;
+  color: #3A4550;
   font-size: 200%;
 }
 
@@ -196,7 +196,7 @@ div.print {
 }
 
 div.print a {
-  background: #C83200;
+  background: #16B378;
   display: block;
   font-size: 200%;
   color: white;
@@ -209,7 +209,7 @@ div.print a {
 }
 
 div.print a:hover {
-  background: #4682B4;
+  background: #F9AE41;
 }
 
 .done {
