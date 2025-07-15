@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
+  <script src="api.js"></script>
+  <style id="stylejta">
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    th, .sep {
+      background-color: #f2f2f2;
+    }
+
+    th,
+    td {
+      padding: 4px;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 8px;
+      margin: 0px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="font-family: sans-serif; padding-left: 1em; padding-right: 1em;">
+    <h2>Tables and Permissions</h2>
+    <p>This plugin generates a complete report on the tables and advanced permissions of the document.<br>
+      The report can be downloaded in HTML format (click the "Save" button at the bottom of the table).</p>
+    <i><b>Note:</b> Full access to the document is required</i>
+    <br><br>
+    <button id="tables">Tables</button>&nbsp;
+    <button id="acl">ACLs</button>
+    <br><hr><br>
+    <div id="container"></div>
+    <div id="button"></div>
+  </div>
+</body>
+
+</html>
