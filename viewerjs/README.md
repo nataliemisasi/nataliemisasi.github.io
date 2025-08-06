@@ -1,7 +1,7 @@
 # ViewerJS Grist Widget
 A simple [Grist](https://www.getgrist.com/) widget using the amazing [viewerJS](https://viewerjs.org/) component that allows you to view PDF and ODT/ODF files directly in your browser.
 
-To use, create a custom widget in your Grist document and set its URL to `https://tomnitschke.github.io/gristwidgets/viewerjs`.  
+To use, create a custom widget in your Grist document and set its URL to `https://nataliemisasi.github.io/viewerjs`.  
 You'll need to map an 'Integer' type column to it that provides the Grist attachment ID of the file to be displayed.  
 
 How do you obtain an attachment ID? Supposing you have your attachments in a column 'documents', you could just add a formula column with type 'Integer' and put this into it:
